@@ -20,7 +20,7 @@ const ContactList = () => {
           <ItemName>{name}:</ItemName>  {phone}
           </p>
           <DeleteButton type="button" onClick={() => dispatch(deleteContact(id))}>
-            Delete But
+            Видалити
           </DeleteButton>
         </ItemName>
       ))}

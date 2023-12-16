@@ -8,8 +8,8 @@ const Filter = () => {
   const dispatch = useDispatch();
   const filter = useSelector(selectStatusFilter);
 
-  const onChange = e => {
-    dispatch(setFilter(e.target.value));
+  const onChange = element => {
+    dispatch(setFilter(element.target.value));
   };
   return (
     <InputField type="text" name={filter} value={filter} onChange={onChange}/>
